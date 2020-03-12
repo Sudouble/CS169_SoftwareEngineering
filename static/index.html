@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <title>Smile</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+        <script src="scripts/jquery.min.js"></script>
+     <script type="text/javascript" src="scripts/smiles.js"></script>
+     <script type="text/javascript">
+     // This is a jQuery convention to say that once all the files
+     // load, the function Smile.start() should run.
+     // This function is defined in the smiles.js
+     $(function() {
+          Smile.start();          
+     });
+     </script>
+</head>
+<body>
+        <header>
+                <!-- FINISH ME: add the logo here -->
+                <img class="logo" src="images/logo.png" alt="logo"></img>
+                <div class="create">
+                    <!-- FINISH ME: add a link to the create page -->
+                    <a href="create.html" class="my-button">Share a smile</a>
+                    <form method="get" action="index.html">
+                         <input type="text" placeholder="Title" class="title-input" name="title" />
+                         <!-- FINISH ME: add the rest of the form fields -->
+                         <textarea class="story-input" name="stroy" placeholder="Share a smile..."></textarea>
+                         <label for="smile-select">How happy did this make you?</label>
+                         <br>
+                         <select id="smile-select" class="selectors">
+                              <option value=1>Happy</option>
+                              <option value=2>Really happy</option>
+                              <option value=3>So ecstatic, I can't stop smiling!</option>
+                         </select>
+                         <input type="submit" class="submit-input" value="Post"/>
+                         <a href="index.html" class="cancel-input">Cancel</a>
+                    </form>
+                </div>
+        </header>
+        <section class="mainbody smiles">
+                <!-- FINISH ME: create 3 smile posts -->
+                <article class="smile">
+                     <div class="happiness-level-col">              
+                         <div class="happiness-level-1">Lv1</div>      
+                         <!--div class="happiness-level">Lv1</div>  -->
+                     </div>
+                     <div class="story-col">
+                         <div class="title">Like.</div>
+                         <div class="story">Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Liked someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.Like someone.</div>
+                     </div>
+                     <div class="like-col">
+                         <button class="like">Like</button>                     
+                         <div class="count">123</div>
+                     </div>
+                     <div class="timestamp">Posted at 2020年3月9日22:51:26</div>
+                </article>
+                <article class="smile">
+                    <div class="happiness-level-col">                         
+                         <div class="happiness-level-2">Lv2</div>  
+                         <!-- <div class="happiness-level">Lv1</div> -->
+                    </div>
+                    <div class="story-col">
+                         <div class="title">see</div>
+                         <div class="story">see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.see the same movie with her.</div>
+                    </div>
+                    <div class="like-col">
+                         <button class="like">Like</button>
+                         <div class="count">123</div>
+                    </div>                    
+                    <div class="timestamp">Posted at 2020年3月9日22:51:07</div>
+                </article>
+                <article class="smile">
+                    <div class="happiness-level-col">                         
+                         <div class="happiness-level-3">Lv1</div>
+                    </div>
+                    <div class="story-col">
+                         <div class="title">walk</div>
+                         <div class="story">then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.then take a walk with her.</div>
+                    </div>
+                    <div class="like-col">
+                         <button class="like">Like</button>
+                         <div class="count">666</div>
+                    </div>                    
+                    <div class="timestamp">Posted at 2020年3月9日22:51:19</div>
+                </article>
+     </section>
+</body>
+</html>

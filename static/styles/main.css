@@ -1,0 +1,184 @@
+
+body {
+	margin: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        font-family: Tahoma, Geneva, sans-serif;
+        background-color: khaki;
+}
+
+/* FINISH ME (Task 2.2+): add the styling for the logo and the create button */
+
+header{
+        display: block;
+        text-align: center;
+        width: 100%;               
+        background-color: khaki;
+        position: fixed;
+        top: 0px
+}
+header.logo {
+        text-align: center;        
+}
+
+.my-button{
+        display: block;
+        width: 90%;
+        text-align: center;
+        background-color: lawngreen;
+        border: 5px solid lightgrey;
+        text-decoration-line: none;
+        margin-left: 5%;
+        margin-right: 5%;
+}
+
+.my-button:hover{
+        background-color: rgb(199, 199, 178);
+}
+
+section.mainbody {
+        margin-top: 150px;
+}
+
+
+section.mainbody.smiles{
+        margin-top: 150px;
+}
+
+.happiness-level-col{
+        text-align: center;
+        float: left;
+        width: 100px;
+}
+
+.happiness-level-1{
+        background: url("../images/happiness-level.png") 0 40px;
+        height: 80px;
+        width: 40px;
+        color: transparent;
+}
+
+.happiness-level-2{
+        background-image: url("../images/happiness-level.png");
+        background-position: 0 60px;
+        height: 80px;
+        width: 40px;
+        color: transparent;
+}
+
+.happiness-level-3{
+        background-image: url("../images/happiness-level.png");
+        height: 80px;
+        width: 40px;
+        background-position: 0, 80px;
+        background-repeat: no-repeat;
+        color: transparent;
+}
+
+.title{
+        text-align: center;
+}
+.story-col{
+        text-align: left;
+        float: left;
+        width: calc(100% - 200px);
+}
+
+.title {
+        font-size: 125%;
+}
+
+.like-col {
+        text-align: center;
+        float: left;
+        width: 100px;
+}
+
+.timestamp{
+        clear: left;
+        margin-left: 100px;
+}
+
+.smile{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(255, 248, 220);
+        display:inline-block;
+}
+
+.like {
+        border: none;
+        background: none;
+        background-image: url("../images/heart.png");
+        width: 48px;
+        height: 40px;
+        color: transparent;
+}
+
+form{
+        display: block;
+        margin: auto;
+        width: 80%;
+}
+
+form .title-input{
+        width: 100%;
+        display: block;
+}
+
+form .story-input{
+        width: 100%;
+        display: block;
+        height: 100px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+}
+
+.selectors{
+        display: block;
+        margin-top: 5px;
+}
+
+.submit-input{
+        display: block;
+        float: right;
+        text-align: center;
+        background-color: lawngreen;
+        border: 5px solid lightgrey;
+}
+
+.submit-input:hover{
+        background-color: rgb(199, 199, 178);
+}
+
+.cancel-input:hover{
+        background-color: rgb(199, 199, 178);
+}
+
+.cancel-input{
+        display: block;
+        float: left;
+        text-align: center;
+        background-color: lawngreen;
+        border: 5px solid lightgrey;
+}
+
+/* FINISH ME (Task 3): add responsive styling for the number of layout columns */
+@media screen and (max-width: 800px) {
+        .mainbody.smiles {
+                column-count: 1;
+        }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px){
+        .mainbody.smiles {
+                column-count: 2;
+        }
+}
+
+@media screen and (min-width: 1200px) {
+        .mainbody.smiles {
+                column-count: 3;
+        }
+}

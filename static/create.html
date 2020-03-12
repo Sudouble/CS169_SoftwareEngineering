@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<header>
+		<!-- FINISH ME: add the logo here -->
+		<img class="logo" src="./images/logo.png"></a>
+				<!-- FINISH ME: add here a message -->
+		<div>Tell us something that made you smile</div>
+	</header>
+
+	<section class="mainbody">
+	<form method="get" action="index.html">
+	<input type="text" placeholder="Title" class="title-input" name="title" />
+	<!-- FINISH ME: add the rest of the form fields -->
+	<textarea class="story-input" name="stroy" placeholder="Share a smile..."></textarea>
+	<label for="smile-select">How happy did this make you?</label>
+	<br>
+	<select id="smile-select" class="selectors">
+		<option value=1>Happy</option>
+		<option value=2>Really happy</option>
+		<option value=3>So ecstatic, I can't stop smiling!</option>
+	</select>
+	<input type="submit" class="submit-input" value="Post"/>
+	<a href="index.html" class="cancel-input">Cancel</a>
+	</form>
+	</section>         
+</body>
+</html>
